@@ -24,7 +24,7 @@ body {
   position: relative;
   width: 500px;
   height: 500px;
-  background: url(/img//hand_02.png);
+  background: url(/ot/20230504/img/hand_02.png);
   background-size: 500px;
 }
 
@@ -35,7 +35,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(/img//hand_01.png);
+  background: url(/ot/20230504/img/hand_01.png);
   background-size: 500px;
   animation: animate 4s ease-in-out infinite;
 }
@@ -105,7 +105,7 @@ body {
   left: 0;
   width: 500px;
   height: 500px;
-  background: url(/img/lines.png);
+  background: url(/ot/20230504/img/lines.png);
   background-size: 500px;
   animation: handLines 4s ease-in-out infinite;
 }
@@ -128,7 +128,7 @@ body {
   left: 0;
   width: 500px;
   height: 500px;
-  background: url(/img/points.png);
+  background: url(/ot/20230504/img/points.png);
   background-size: 500px;
   animation: handPoints 4s ease-in-out infinite;
 }
