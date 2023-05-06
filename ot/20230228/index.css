@@ -10,32 +10,42 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #111;
+  background: #000;
 }
 
 .scan {
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  animation: animateColor 2s linear infinite;
 }
 
-.scan .hand {
+@keyframes animateColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.scan .face {
   position: relative;
   width: 500px;
   height: 500px;
-  background: url(./img/hand_02.png);
+  background: url(./img/face2.png);
   background-size: 500px;
 }
 
-.scan .hand::before {
+.scan .face::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(./img/hand_01.png);
+  background: url(./img/face1.png);
   background-size: 500px;
   animation: animate 4s ease-in-out infinite;
 }
@@ -50,7 +60,7 @@ body {
   }
 }
 
-.scan .hand::after {
+.scan .face::after {
   content: "";
   position: absolute;
   top: 0;
@@ -60,10 +70,10 @@ body {
   background: #3fefef;
   border-radius: 8px;
   filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
-  animation: animateLines 4s ease-in-out infinite;
+  animation: animateLine 4s ease-in-out infinite;
 }
 
-@keyframes animateLines {
+@keyframes animateLine {
   0%,
   100% {
     top: 0%;
@@ -75,12 +85,12 @@ body {
 
 .scan h3 {
   text-transform: uppercase;
-  font-size: 2em;
-  letter-spacing: 2px;
-  margin-top: 2px;
   color: #3fefef;
+  font-size: 2em;
+  margin-top: 20px;
+  letter-spacing: 2px;
   filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
-  animation: animateText 0.5s steps(1) infinite;
+  animation: animateText 4s ease-in-out infinite;
 }
 
 @keyframes animateText {
@@ -93,24 +103,24 @@ body {
   }
 }
 
-.scan .hand .lines {
+.scan .face .dots {
   position: absolute;
   inset: 0;
 }
 
-.scan .hand .lines::before {
+.scan .face .dots::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 500px;
   height: 500px;
-  background: url(./img//lines.png);
+  background: url(lines.png);
   background-size: 500px;
-  animation: handLines 4s ease-in-out infinite;
+  animation: faceLines 4s ease-in-out infinite;
 }
 
-@keyframes handLines {
+@keyframes faceLines {
   0%,
   25%,
   100% {
@@ -121,19 +131,19 @@ body {
   }
 }
 
-.scan .hand .lines::after {
+.scan .face .dots::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 500px;
   height: 500px;
-  background: url(./img/points.png);
+  background: url(points.png);
   background-size: 500px;
-  animation: handPoints 4s ease-in-out infinite;
+  animation: faceDots 4s ease-in-out infinite;
 }
 
-@keyframes handPoints {
+@keyframes faceDots {
   0%,
   100% {
     height: 0%;
