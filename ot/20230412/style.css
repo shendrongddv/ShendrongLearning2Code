@@ -1,14 +1,14 @@
-@import url(/oswald/oswald.css);
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
 :root {
   --bg: #222;
-  --ff: "Oswald", sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
 
 body {
