@@ -32,7 +32,7 @@ section::before {
   left: -400px;
   display: flex;
   color: #fff;
-  box-shadow: 0 15px 10px (rgba(0, 0, 0, 0.5));
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.5);
   transform: rotate(calc(var(--d) * 1deg)) translateY(calc(var(--y) * 1px));
 }
 
@@ -42,6 +42,7 @@ section::before {
   font-size: 3em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  font-weight: 500;
   white-space: nowrap;
   animation: animate 60s linear infinite;
   animation-delay: -60s;
