@@ -1,7 +1,6 @@
-@import url(../assets/fonts/poppins/poppins.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --ff: "Poppins", sans-serif;
   --bg: #2f323f;
 }
 
@@ -9,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--ff);
+  font-family: "Poppins", sans-serif;
 }
 
 body {
