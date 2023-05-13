@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page Design with Biometrics</title>
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login">
+      <form>
+        <h2>Hello!<br /><span>Welcome Back!</span></h2>
+        <div class="inputBox">
+          <input type="text" placeholder="Username" />
+          <i class="fa-regular fa-user"></i>
+        </div>
+        <div class="inputBox">
+          <input type="password" placeholder="Password" />
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <label class="inputBox"
+          ><input type="checkbox" /> Keep me logged in</label
+        >
+        <div class="inputBox">
+          <input type="submit" value="Log in" />
+        </div>
+      </form>
+      <h4>OR</h4>
+      <div class="fingerprint">
+        <div class="fingerprintBox">
+          <img src="fingerprint.png" />
+        </div>
+        <p>Login with fingerprint</p>
+      </div>
+    </div>
+  </body>
+</html>
