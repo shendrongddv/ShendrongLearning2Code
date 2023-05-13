@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Search Box</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="searchBox">
+      <div class="search">
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+      <div class="searchInput">
+        <input type="text" placeholder="Search Here" />
+      </div>
+      <div class="close"><ion-icon name="close-outline"></ion-icon></div>
+    </div>
+
+    <!-- Ionicons -->
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <!-- JavaScript -->
+    <script>
+      let search = document.querySelector(".search");
+      let close = document.querySelector(".close");
+      let searchBox = document.querySelector(".searchBox");
+
+      search.onclick = function () {
+        searchBox.classList.add("active");
+      };
+
+      close.onclick = function () {
+        searchBox.classList.remove("active");
+      };
+    </script>
+  </body>
+</html>
