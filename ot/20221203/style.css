@@ -52,17 +52,17 @@ body {
   transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
 }
 
-.main .navigation span i {
+.main .navigation span ion-icon {
   transition: 0.5s;
   font-size: 0em;
   color: #fff;
 }
 
-.main .navigation.active span i {
+.main .navigation.active span ion-icon {
   font-size: 1.35em;
 }
 
-.main .navigation.active span:hover i {
+.main .navigation.active span:hover ion-icon {
   color: #2dfc52;
   filter: drop-shadow(0 0 2px #2dfc52) drop-shadow(0 0 5px #2dfc52)
     drop-shadow(0 0 15px #2dfc52);
@@ -89,14 +89,14 @@ body {
   background: #2dfc52;
 }
 
-.main .navigation ~ .close i {
+.main .navigation ~ .close ion-icon {
   font-size: 2em;
   scale: 0;
   color: #10131c;
   transition: 0.5s;
 }
 
-.main .navigation.active ~ .close i {
+.main .navigation.active ~ .close ion-icon {
   scale: 1;
   transition-delay: 1s;
 }
