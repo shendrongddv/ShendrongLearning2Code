@@ -10,6 +10,10 @@
 <!-- Vanilla Tilt -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 
+# Fruktur
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+font-family: 'Fruktur', cursive;
+
 # Kanit
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 font-family: "Kanit", sans-serif;
