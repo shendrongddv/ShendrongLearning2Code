@@ -9,7 +9,7 @@ const characters = {
   lowercase: "abcdefghijklmnopqrstuvwxyz",
   uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   numbers: "0123456789",
-  symbol: "^!$%&|[](){}:;.,*+-#@<>~",
+  symbols: "^!$%&|[](){}:;.,*+-#@<>~",
 };
 
 const generatePassword = () => {
