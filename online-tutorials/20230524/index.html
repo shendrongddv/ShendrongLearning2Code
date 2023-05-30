@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Scrolling Website | GSAP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="parallax">
+      <div class="layer bg" data-speed="0.10"></div>
+      <div class="layer overlay" data-speed="-0.30"></div>
+      <div class="layer assassins" data-speed="0.25"></div>
+      <div class="layer bottom" data-speed="0"></div>
+    </div>
+    <section>
+      <img src="img/text.png" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+        adipisci dignissimos pariatur voluptates eligendi, exercitationem sint,
+        tenetur dolore sed corporis asperiores numquam magni officiis, itaque
+        harum quas mollitia soluta. Aut laudantium atque vitae nam asperiores
+        eos voluptatem similique deleniti, maiores dolorem exercitationem ex
+        sequi, reiciendis illo vel quibusdam illum ullam ut minima. Saepe unde
+        quod at omnis sapiente assumenda possimus veniam nam voluptatibus
+        explicabo atque quas, natus officiis molestias, ut itaque neque.
+        Reiciendis quasi natus soluta quisquam possimus repellat iure sed quos
+        distinctio quidem iste cum corporis corrupti facere, dolore sequi
+        ratione beatae exercitationem dolorem odit laudantium rerum. Deleniti
+        ipsa eum iure voluptatum sequi expedita tenetur exercitationem dicta rem
+        voluptates esse dolores itaque, ullam temporibus at necessitatibus
+        quaerat error vel ducimus consectetur recusandae quam minus obcaecati
+        consequuntur? Ad in eligendi consequuntur quae, nihil modi
+        exercitationem libero est quaerat minima ullam non dolor, corporis iusto
+        laudantium aspernatur! Tempore corrupti, quam magnam minima quis ullam
+        nam quidem eum quo, molestias reiciendis. Praesentium ipsa consequuntur
+        maiores ullam sunt quo nulla et soluta, similique molestiae enim officia
+        dignissimos eaque sint commodi laudantium impedit ducimus molestias
+        omnis tempora corrupti quisquam dolorem. Maxime dolore blanditiis,
+        excepturi fugit recusandae assumenda, corrupti, tempora alias quisquam
+        ut sint consequuntur rem laborum dicta. Voluptatem voluptates
+        dignissimos totam officiis explicabo, sequi quia atque ad officia!
+        Corporis, quidem! Commodi facere doloremque officiis molestiae. Debitis,
+        omnis. Rerum minus temporibus autem omnis perspiciatis reiciendis
+        nostrum non expedita. Aperiam, voluptatum modi! Provident sit fuga ipsa.
+        Iusto minima quod dolores autem ducimus? Ea, hic suscipit! Vel.
+      </p>
+    </section>
+
+    <!-- GreenSock ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <!-- JavaScript -->
+    <script>
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#parallax",
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      });
+
+      gsap.utils.toArray(".layer").forEach((layer) => {
+        const speed = layer.dataset.speed;
+        const movement = -(layer.offsetHeight * speed);
+        tl.to(
+          layer,
+          {
+            y: movement,
+            ease: "none",
+          },
+          0
+        );
+      });
+    </script>
+  </body>
+</html>
