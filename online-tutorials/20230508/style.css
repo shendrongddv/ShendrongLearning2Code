@@ -31,7 +31,7 @@ body {
   width: 5px;
   height: 5px;
   background: #2f363e;
-  z-index: 10000;
+  z-index: 1000;
   border: 1px solid #fff;
   border-radius: 50%;
 }
@@ -127,7 +127,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  z-index: 0;
+  z-index: 10;
 }
 
 .niddles i {
@@ -141,23 +141,23 @@ body {
   transform: scaleY(0.5);
 }
 
-.niddles.niddles2 {
+.niddles.niddle2 {
   width: 170px;
   height: 170px;
   z-index: 9;
 }
 
-.niddles.niddles2 i {
+.niddles.niddle2 i {
   width: 3px;
 }
 
-.niddles.niddles3 {
+.niddles.niddle3 {
   width: 140px;
   height: 140px;
   z-index: 8;
 }
 
-.niddles.niddles3 i {
+.niddles.niddle3 i {
   width: 4px;
 }
 
